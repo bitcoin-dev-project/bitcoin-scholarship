@@ -9,3 +9,20 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+  min-height: 100vh;
+  background-color:hsla(27,93%,88%,1);
+  background-image:
+    radial-gradient(at 88% 91%, hsla(26,94%,76%,0.68) 0px, transparent 50%),
+    radial-gradient(at 44% 1%, hsla(48,93%,81%,0.98) 0px, transparent 50%),
+    radial-gradient(at 16% 69%, hsla(36,85%,82%,0.98) 0px, transparent 50%),
+    radial-gradient(at 11% 10%, hsla(29,90%,81%,0.97) 0px, transparent 50%),
+    radial-gradient(at 78% 58%, hsla(37,93%,81%,0.99) 0px, transparent 50%),
+    radial-gradient(at 29% 58%, hsla(20,96%,80%,0.98) 0px, transparent 50%),
+    radial-gradient(at 42% 97%, hsla(35,93%,75%,0.99) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
