@@ -715,6 +715,20 @@ video {
   clear: none;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -725,6 +739,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .box-border {
@@ -826,6 +844,14 @@ video {
   display: none;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-px {
+  height: 1px;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -836,6 +862,14 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -1807,10 +1841,6 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-\[1\.5px\] {
   border-width: 1.5px;
 }
@@ -1896,6 +1926,15 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
 }
 
 .decoration-slice {
@@ -2039,18 +2078,6 @@ video {
   padding-bottom: 5rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -2109,6 +2136,10 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-baskerville {
+  font-family: Libre Baskerville, serif;
 }
 
 .text-2xl {
@@ -2625,6 +2656,21 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-height: 100vh;
+  background-color:hsla(27,93%,88%,1);
+  background-image:
+    radial-gradient(at 88% 91%, hsla(26,94%,76%,0.68) 0px, transparent 50%),
+    radial-gradient(at 44% 1%, hsla(48,93%,81%,0.98) 0px, transparent 50%),
+    radial-gradient(at 16% 69%, hsla(36,85%,82%,0.98) 0px, transparent 50%),
+    radial-gradient(at 11% 10%, hsla(29,90%,81%,0.97) 0px, transparent 50%),
+    radial-gradient(at 78% 58%, hsla(37,93%,81%,0.99) 0px, transparent 50%),
+    radial-gradient(at 29% 58%, hsla(20,96%,80%,0.98) 0px, transparent 50%),
+    radial-gradient(at 42% 97%, hsla(35,93%,75%,0.99) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2763,12 +2809,6 @@ html {
   }
 }
 
-@media (min-width: 1024px) {
-  .lg\:pb-16 {
-    padding-bottom: 4rem;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   .dark\:text-gray-500 {
     --tw-text-opacity: 1;
@@ -2781,3 +2821,5 @@ html {
     }
   }
 }
+
+
