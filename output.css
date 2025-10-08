@@ -901,6 +901,10 @@ video {
   max-width: 1024px;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1771,6 +1775,10 @@ video {
   border-radius: 50%;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -2140,6 +2148,10 @@ video {
 
 .font-baskerville {
   font-family: Libre Baskerville, serif;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
 }
 
 .text-2xl {
