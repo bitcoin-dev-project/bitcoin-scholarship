@@ -7,6 +7,9 @@ module.exports = {
         baskerville: ['Libre Baskerville', 'serif'],
         playfair: ['"Playfair Display"', 'serif'],
       },
+      screens: {
+        'xs': '475px',
+      },
     },
   },
   plugins: [],
