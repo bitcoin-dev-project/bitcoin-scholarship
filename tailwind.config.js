@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        baskerville: ['Libre Baskerville', 'serif'],
+        playfair: ['"Playfair Display"', 'serif'],
+      },
+      screens: {
+        'xs': '475px',
+      },
+    },
   },
   plugins: [],
 };

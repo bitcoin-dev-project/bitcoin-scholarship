@@ -8,4 +8,139 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
+
+body {
+  min-height: 100vh;
+  background-color:hsla(27,93%,88%,1);
+  background-image:
+    radial-gradient(at 88% 91%, hsla(26,94%,76%,0.68) 0px, transparent 50%),
+    radial-gradient(at 44% 1%, hsla(48,93%,81%,0.98) 0px, transparent 50%),
+    radial-gradient(at 16% 69%, hsla(36,85%,82%,0.98) 0px, transparent 50%),
+    radial-gradient(at 11% 10%, hsla(29,90%,81%,0.97) 0px, transparent 50%),
+    radial-gradient(at 78% 58%, hsla(37,93%,81%,0.99) 0px, transparent 50%),
+    radial-gradient(at 29% 58%, hsla(20,96%,80%,0.98) 0px, transparent 50%),
+    radial-gradient(at 42% 97%, hsla(35,93%,75%,0.99) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Custom smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Floating animations for decorative elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatDelayed {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-15px) translateX(10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatDelayed 8s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Details/summary styling */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  list-style: none;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Enhanced focus states for accessibility */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+}
+
+/* Smooth hover effect for cards */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  /* Ensure text doesn't overflow on very small screens */
+  .text-overflow-fix {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* Better touch targets for mobile */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better spacing for mobile */
+  .mobile-padding {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+
